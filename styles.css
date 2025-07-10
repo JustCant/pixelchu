@@ -39,6 +39,7 @@ body {
 .container {
     height: 31em;
     width: 34em;
+    cursor: pointer;
 }
 
 .pikachu {

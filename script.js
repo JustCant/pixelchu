@@ -1,3 +1,9 @@
+const pikachuCry = document.getElementById('pikachu-cry');
+
+document.getElementById('pikachu-container').addEventListener('click', () => {
+    pikachuCry.play();
+});
+
 document.getElementById('skin').addEventListener('change', function(event) {
     console.log('Skin color changed to:', event.target.value);
     document.documentElement.style.setProperty('--skin-color', event.target.value);

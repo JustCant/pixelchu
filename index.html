@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixelchu</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="assets/favicon/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <div class="container">
-        <div class="pikachu" alt="Pixel art Pikachu"></div>
-    </div>
-    
-    <!-- Add color pickers -->
-    <div class="color-pickers">
-        <label for="skin">Skin:</label>
-        <input type="color" id="skin" value="#ffd823">
-        <label for="earsEyesNose">Ears, Eyes, Nose:</label>
-        <input type="color" id="earsEyesNose" value="#000">
-        <label for="eyeGlint">Eye Glint:</label>
-        <input type="color" id="eyeGlint" value="#ffffff">
-        <label for="cheeks">Cheeks:</label>
-        <input type="color" id="cheeks" value="#fe2f1d">
-        <label for="mouth">Mouth:</label>
-        <input type="color" id="mouth" value="#74070a">
-        <label for="tongue">Tongue:</label>
-        <input type="color" id="tongue" value="#f45490">
-        <button class="reset-button" role="button" id="resetButton">Reset</button>
-    </div>
-    <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixelchu</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="assets/favicon/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <audio id="pikachu-cry">
+            <source src="assets/sounds/pikachu-cry.mp3"></source>
+        </audio>
+
+        <div id="pikachu-container" class="container">
+            <div class="pikachu" alt="Pixel art Pikachu"></div>
+        </div>
+        
+        <div class="color-pickers">
+            <label for="skin">Skin:</label>
+            <input type="color" id="skin" value="#ffd823">
+            <label for="earsEyesNose">Ears, Eyes, Nose:</label>
+            <input type="color" id="earsEyesNose" value="#000">
+            <label for="eyeGlint">Eye Glint:</label>
+            <input type="color" id="eyeGlint" value="#ffffff">
+            <label for="cheeks">Cheeks:</label>
+            <input type="color" id="cheeks" value="#fe2f1d">
+            <label for="mouth">Mouth:</label>
+            <input type="color" id="mouth" value="#74070a">
+            <label for="tongue">Tongue:</label>
+            <input type="color" id="tongue" value="#f45490">
+            <button class="reset-button" role="button" id="resetButton">Reset</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
