@@ -1,7 +1,11 @@
+const pikachu = document.getElementById('pikachu');
 const pikachuCry = document.getElementById('pikachu-cry');
 
 document.getElementById('pikachu-container').addEventListener('click', () => {
+    pikachu.classList.add('pikachu-smile');
     pikachuCry.play();
+
+    setTimeout(() => pikachu.classList.remove('pikachu-smile'), 1300);
 });
 
 document.getElementById('skin').addEventListener('change', function(event) {
