@@ -17,6 +17,11 @@ body {
     background: linear-gradient(45deg, #00f535, transparent);
 }
 
+label,
+input {
+    cursor: pointer;
+}
+
 .color-pickers {
     position: absolute;
     top: 1em;
@@ -29,11 +34,6 @@ body {
     padding: 1em;
     border-radius: 5px;
     border: solid 1px gray;
-}
-
-label,
-input {
-    cursor: pointer;
 }
 
 .container {
